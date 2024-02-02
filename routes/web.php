@@ -18,17 +18,18 @@ use App\Http\Controllers\StudentController;
 
 // Students
 
-Route::get('/student', [ProductController::class, 'index'])->name('student.index');
+Route::get('/student/index', [StudentController::class, 'index'])->name('student.index');
 
-Route::post('/student', [ProductController::class, 'store'])->name('student.store');
+Route::post('/student/store', [StudentController::class, 'store'])->name('student.store');
 
-Route::get('/student', [ProductController::class, 'create'])->name('student.create');
+Route::get('/student/create', [StudentController::class, 'create'])->name('student.create');
+
+Route::put('/student/{student}/update', [StudentController::class, 'update' ])->name('student.update');
+
+Route::delete('/student/{student}/delete', [StudentController::class, 'delete'])->name('student.delete');
+
+Route::get('/student/{student}/edit', [StudentController::class, 'edit'])->name('student.edit');
 
 
-Route::get('/student/{student}/edit', [ProductController::class, 'edit'])->name('student.edit');
+Route::get('/student/add', [StudentController::class, 'add'])->name('student.add');
 
-Route::put('/student/{student}/update', [ProductController::class, 'update' ])->name('student.update');
-
-Route::delete('/student/{student}/delete', [ProductController::class, 'delete'])->name('student.delete');
-
-Route::get('/student/add', [ProductController::class, 'add'])->name('student.add');

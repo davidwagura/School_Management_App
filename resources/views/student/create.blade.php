@@ -9,16 +9,18 @@
     <style>
         body {
             background-color: burlywood;
+            text-align: center;
         }
         label {
             display: flex;
-            justify-content: center;
+            text-align: center;
+            
         }
-        input {
+        /* input {
             display: flex;
             justify-content: center;
             display: inline-block;
-        }
+        } */
     </style>
     <h1>
         <u>
@@ -29,29 +31,29 @@
         <form action="{{ route('student.store') }}" method="post">
             @csrf
             @method('post')
-            <label for="name">First Name:</label>
-            <input type="text" name="first-name">
+            <label for="first_name">First Name:</label>
+            <input type="text" name="first_name">
 
-            <label for="name">Last Name:</label>
-            <input type="text" name="last-name">
+            <label for="last_name">Last Name:</label>
+            <input type="text" name="last_name">
 
-            <label for="name">Gender:</label>
+            <label for="gender">Gender:</label>
             <input type="text" name="gender">
 
-            <label for="name">Class:</label>
-            <input type="text" name="form">
+            <label for="password">Password:</label>
+            <input type="text" name="password">
 
-            <label for="name">Admission Number:</label>
-            <input type="number" name="admission-number">
 
-            <label for="name">Home County:</label>
-            <input type="text" name="home-county">
+            <label for="admission_number">Admission Number:</label>
+            <input type="number" name="admission_number">
 
-            <label for="name">Date Of Birth:</label>
-            <input type="text" name="date-of-birth">
+            <label for="home_county">Home County:</label>
+            <input type="text" name="home_county">
 
-            <button>submit</button>
-        
+            <label for="date_of_birth">Date Of Birth:</label>
+            <input type="text" name="date_of_birth"><br>
+
+            <button type="submit">Submit</button>
         </form>
     </div>
 </body>
