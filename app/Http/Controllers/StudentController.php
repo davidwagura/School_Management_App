@@ -37,18 +37,16 @@ class StudentController extends Controller
         }
 
         public function update(Request $request, Student $student) {
-             $data = $request 
-             ([
-                "first_name",
-                'last_name',
-                'gender',
-                'password',
-                'admission_number',
-                'home_county',
-                'date_of_birth'
-            ]);
 
-            $student->update($data);
+            $student->first_name = $request->first_name;
+            $student->last_name = $request->last_name;
+            $student->gender = $request->gender;
+            $student->password = $request->password;
+            $student->admission_number = $request->admission_number;
+            $student->home_county = $request->home_county;
+            $student->date_of_birth = $request->date_of_birth;
+            $student->save();
+
             return redirect(route('student.index'));
         }
         public function edit(Student $student) 

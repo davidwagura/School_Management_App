@@ -6,6 +6,18 @@
     <title>Document</title>
 </head>
 <body>
+    <style>
+        body {
+            background-color: burlywood;
+            text-align: center;
+        }
+        table {
+            display: flex;
+            text-align: center;
+            
+        }
+
+    </style>
     <h1>
         <u>
             Edit your information here:
