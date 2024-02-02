@@ -10,7 +10,7 @@
         <u>Edit student details:</u>
     </h1>
     <div>
-        <form action=>
+        <form action="{{ route('student.update', ['student' => $student]) }}" method="post">
             @csrf
             @method('put')
             <div>

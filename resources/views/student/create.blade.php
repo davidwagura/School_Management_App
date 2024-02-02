@@ -26,9 +26,9 @@
         </u>
     </h1>
     <div class="create-inputs">
-        <form action="">
+        <form action="{{ route('student.store') }}" method="post">
             @csrf
-            @method(put)
+            @method('post')
             <label for="name">First Name:</label>
             <input type="text" name="first-name">
 

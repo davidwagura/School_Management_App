@@ -12,7 +12,7 @@
         </u>
     </h1>
     <div>
-        <table>
+        <table border="1">
             <tr>
                 <th>Id</th>
                 <th>FirstName</th>
@@ -33,7 +33,7 @@
                     <td>{{ $student->$home-county }}</td>
                     <td>{{ $student->$date-of-birth }}</td>
                 </tr> 
-                <form action="">
+                <form action="{{ route('student.delete', ['student' => $student]) }}" method="post">
                     @csrf
                     @method('delete')
 
@@ -41,11 +41,14 @@
                 </form>
             </td>
             <td>
-                <a href="">Edit</a>
+                <a href="{{ route('student.edit', ['student' => $student]) }}">Edit</a>
             </td>    
         </tr>
         @endforeach
         </table>
+    </div>
+    <div>
+        <a href="{{ route('student.add') }}">New student</a>
     </div>
 </body>
 </html>
