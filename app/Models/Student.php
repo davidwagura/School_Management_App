@@ -13,7 +13,7 @@ class Student extends Model
         'first-name',
         'last-name',
         'gender',
-        'password',
+        'form',
         'admission-number',
         'home-county',
         'date-of-birth'

@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\StudentController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,4 +18,17 @@ use Illuminate\Support\Facades\Route;
 
 // Students
 
-Route::get('/student', [UserController::class, 'index']);
+Route::get('/student', [ProductController::class, 'index'])->name('student.index');
+
+Route::post('/student', [ProductController::class, 'store'])->name('student.store');
+
+Route::get('/student', [ProductController::class, 'create'])->name('student.create');
+
+
+Route::get('/student/{student}/edit', [ProductController::class, 'edit'])->name('student.edit');
+
+Route::put('/student/{student}/update', [ProductController::class, 'update' ])->name('student.update');
+
+Route::delete('/student/{student}/delete', [ProductController::class, 'delete'])->name('student.delete');
+
+Route::get('/student/add', [ProductController::class, 'add'])->name('student.add');
