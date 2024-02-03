@@ -28,21 +28,21 @@
             <tr>
                 <th>Id</th>
                 <th>Name</th>
-                <th>ClassTeacher</th>
+                <th>Patron</th>
                 <th>Edit</th>
                 <th>Delete</th>
             </tr>
-            @foreach ($forms as $form)
+            @foreach ($club as $club)
                 <tr>
-                    <td>{{ $form->id }}</td>
-                    <td>{{ $form->name }}</td>
-                    <td>{{ $form->class_teacher }}</td>
+                    <td>{{ $club->id }}</td>
+                    <td>{{ $club->name }}</td>
+                    <td>{{ $club->patron }}</td>
                 </tr> 
         @endforeach
         </table>
     </div>
     <td>
-        <form action="{{route('form.delete', ['form' => $form ])}}" method="post">
+        <form action="{{route('club.delete', ['club' => $club ])}}" method="post">
             @csrf
             @method('delete')
 
@@ -50,10 +50,10 @@
         </form>
     </td>
     <td>
-        <a href="{{ route('form.edit', ['form' => $form ]) }}">Edit</a>
+        <a href="{{ route('club.edit', ['club' => $club ]) }}">Edit</a>
     </td>  
     <div>
-        <a href="{{ route('form.add') }}">Add a new student</a>
+        <a href="{{ route('club.add') }}">Add a new club</a>
     </div>
   
 </body>

@@ -10,15 +10,15 @@
         <u>Edit student details:</u>
     </h1>
     <div>
-        <form action="{{ route('form.update', ['form' => $form]) }}" method="post">
+        <form action="{{ route('club.update', ['club' => $club]) }}" method="post">
             @csrf
             @method('put')
             <div>
                 <label for="name">Name:</label>
-                <input type="text" name="name" value="{{ $form->name }}">
+                <input type="text" name="name" value="{{ $club->name }}">
     
-                <label for="last_name">Last Name:</label>
-                <input type="text" name="last_name" value="{{ $form->class_teacher }}">
+                <label for="patron">Last Name:</label>
+                <input type="text" name="patron" value="{{ $club->patron }}">
         
                 <input type="submit" value="Update">
             </div>

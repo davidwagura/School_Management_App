@@ -10,6 +10,6 @@ class Form extends Model
     use HasFactory;
     protected $fillable = [
         'name',
-        'class-teacher'
+        'class_teacher'
     ];
 }

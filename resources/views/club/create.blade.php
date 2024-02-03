@@ -28,14 +28,14 @@
         </u>
     </h1>
     <div class="create-inputs">
-        <form action="{{ route('form.store') }}" method="post">
+        <form action="{{ route('club.store') }}" method="post">
             @csrf
             @method('post')
             <label for="name">Name:</label>
             <input type="text" name="name">
 
-            <label for="class_teacher">Class Teacher:</label>
-            <input type="text" name="class_teacher">
+            <label for="patron">Patron:</label>
+            <input type="text" name="patron">
 
             <button type="submit">Submit</button>
         </form>
