@@ -9,18 +9,17 @@ class DepartmentController extends Controller
 {
     public function index() {
     
-        $departments = Department::all();
+        $department = Department::all();
  
-        return view('department.index', ['department' => $departments]);
+        return view('department.index', ['department' => $department]);
      }
- 
     public function create() {
         return view('department.create');
      }
  
     public function store(Request $request)
         {
-                    $department = new Clubs;
+                    $department = new Department;
                     $department->name = $request->name;
                     $department->patron = $request->patron;
                     $department->save();

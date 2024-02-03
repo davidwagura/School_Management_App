@@ -7,7 +7,7 @@
 </head>
 <body>
     <h1>
-        <u>Edit student details:</u>
+        <u>Edit department details:</u>
     </h1>
     <div>
         <form action="{{ route('county.update', ['county' => $county]) }}" method="post">

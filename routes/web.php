@@ -5,6 +5,7 @@ use App\Http\Controllers\ClubController;
 use App\Http\Controllers\FormController;
 use App\Http\Controllers\CountyController;
 use App\Http\Controllers\StudentController;
+use App\Http\Controllers\TeacherController;
 use App\Http\Controllers\DepartmentController;
 
 /*
@@ -100,4 +101,21 @@ Route::delete('/department/{department}/delete', [DepartmentController::class, '
 Route::get('/department/{department}/edit', [DepartmentController::class,'edit'])->name('department.edit');
 
 Route::get('/department/add', [DepartmentController::class, 'add'])->name('department.add');
+
+
+//Teachers
+Route::get('/teacher/index', [TeacherController::class, 'index'])->name('teacher.index');
+
+Route::post('/teacher/store', [TeacherController::class, 'store'])->name('teacher.store');
+
+Route::get('/teacher/create', [TeacherController::class, 'create'])->name('teacher.create');
+
+Route::put('/teacher/{teacher}/update', [TeacherController::class, 'update' ])->name('teacher.update');
+
+Route::delete('/teacher/{teacher}/delete', [TeacherController::class, 'delete'])->name('teacher.delete');
+
+Route::get('/teacher/{teacher}/edit', [TeacherController::class, 'edit'])->name('teacher.edit');
+
+Route::get('/teacher/add', [TeacherController::class, 'add'])->name('teacher.add');
+
 

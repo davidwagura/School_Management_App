@@ -7,7 +7,7 @@
 </head>
 <body>
     <h1>
-        <u>Edit student details:</u>
+        <u>Edit club details:</u>
     </h1>
     <div>
         <form action="{{ route('club.update', ['club' => $club]) }}" method="post">
