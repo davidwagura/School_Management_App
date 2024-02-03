@@ -67,3 +67,19 @@ Route::delete('/club/{club}/delete', [ClubController::class, 'delete'])->name('c
 Route::get('/club/{club}/edit', [ClubController::class, 'edit'])->name('club.edit');
 
 Route::get('/club/add', [ClubController::class, 'add'])->name('club.add');
+
+
+//County
+Route::get('/county/index', [CountyController::class, 'index'])->name('county.index');
+
+Route::post('/county/store', [CountyController::class, 'store'])->name('county.store');
+
+Route::get('/county/create', [CountyController::class, 'create'])->name('county.create');
+
+Route::put('/county/{county}/update', [CountyController::class, 'update' ])->name('county.update');
+
+Route::delete('/county/{county}/delete', [CountyController::class, 'delete'])->name('county.delete');
+
+Route::get('/county/{county}/edit', [CountyController::class, 'edit'])->name('county.edit');
+
+Route::get('/county/add', [CountyController::class, 'add'])->name('county.add');
