@@ -3,7 +3,9 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ClubController;
 use App\Http\Controllers\FormController;
+use App\Http\Controllers\CountyController;
 use App\Http\Controllers\StudentController;
+use App\Http\Controllers\DepartmentController;
 
 /*
 |--------------------------------------------------------------------------
@@ -83,3 +85,19 @@ Route::delete('/county/{county}/delete', [CountyController::class, 'delete'])->n
 Route::get('/county/{county}/edit', [CountyController::class, 'edit'])->name('county.edit');
 
 Route::get('/county/add', [CountyController::class, 'add'])->name('county.add');
+
+//Departments
+Route::get('/department/index', [DepartmentController::class, 'index'])->name('department.index');
+
+Route::post('/department/store', [DepartmentController::class, 'store'])->name('department.store');
+
+Route::get('/department/create', [DepartmentController::class, 'create'])->name('department.create');
+
+Route::put('/department/{department}/update', [DepartmentController::class, 'update' ])->name('department.update');
+
+Route::delete('/department/{department}/delete', [DepartmentController::class, 'delete'])->name('department.delete');
+
+Route::get('/department/{department}/edit', [DepartmentController::class,'edit'])->name('department.edit');
+
+Route::get('/department/add', [DepartmentController::class, 'add'])->name('department.add');
+

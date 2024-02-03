@@ -11,6 +11,6 @@ class County extends Model
 
     protected $filllable = [
         'name',
-        'county_code'
+        'county-code'
     ];
 }

@@ -9,9 +9,9 @@ class CountyController extends Controller
 {
     public function index() {
     
-        $county = County::all();
+        $counties = County::all();
  
-        return view('county.index', ['county' => $county]);
+        return view('county.index', ['counties' => $counties]);
      }
  
     public function create() {
