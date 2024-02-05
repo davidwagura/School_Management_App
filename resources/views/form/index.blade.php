@@ -1,23 +1,8 @@
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
-<body>
-    <style>
-        body {
-            background-color: burlywood;
-            text-align: center;
-        }
-        table {
-            display: flex;
-            text-align: center;
-            
-        }
 
-    </style>
+@extends('welcome') 
+  
+
+@section('content') 
     <h1>
         <u>
             Edit your information here:
@@ -56,5 +41,4 @@
         <a href="{{ route('form.add') }}">Add a new student</a>
     </div>
   
-</body>
-</html>
+@endsection

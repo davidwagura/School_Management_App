@@ -27,6 +27,9 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/test', function () {
+    return view('test');
+});
 
 Route::get('/student/index', [StudentController::class, 'index'])->name('student.index');
 
