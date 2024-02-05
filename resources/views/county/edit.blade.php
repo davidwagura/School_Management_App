@@ -7,7 +7,7 @@
 </head>
 <body>
     <h1>
-        <u>Edit department details:</u>
+        <u>Edit county details:</u>
     </h1>
     <div>
         <form action="{{ route('county.update', ['county' => $county]) }}" method="post">
@@ -15,10 +15,10 @@
             @method('put')
             <div>
                 <label for="name">Name:</label>
-                <input type="text" name="name" value="{{ $club->name }}">
+                <input type="text" name="name" value="{{ $county->name }}">
     
-                <label for="patron">Last Name:</label>
-                <input type="text" name="patron" value="{{ $club->patron }}">
+                <label for="county_code">Last Name:</label>
+                <input type="text" name="county_code" value="{{ $county->county_code }}">
         
                 <input type="submit" value="Update">
             </div>

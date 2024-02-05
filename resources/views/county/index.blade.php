@@ -36,13 +36,13 @@
                 <tr>
                     <td>{{ $county->id }}</td>
                     <td>{{ $county->name }}</td>
-                    <td>{{ $county->patron }}</td>
+                    <td>{{ $county->county_code }}</td>
                 </tr> 
         @endforeach
         </table>
     </div>
     <td>
-        <form action="{{route('county.delete', ['county' => $county ])}}" method="post">
+        <form action="{{route('county.delete', ['county' => $county ])}}" method="delete">
             @csrf
             @method('delete')
 
@@ -50,7 +50,7 @@
         </form>
     </td>
     <td>
-        <a href="{{ route('club.edit', ['club' => $club ]) }}">Edit</a>
+        <a href="{{ route('county.edit', ['county' => $county ]) }}">Edit</a>
     </td>  
     <div>
         <a href="{{ route('county.add') }}">Add a new county</a>

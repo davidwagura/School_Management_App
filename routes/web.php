@@ -23,6 +23,11 @@ use App\Http\Controllers\DepartmentController;
 
 // Students
 
+Route::get('/', function () {
+    return view('welcome');
+});
+
+
 Route::get('/student/index', [StudentController::class, 'index'])->name('student.index');
 
 Route::post('/student/store', [StudentController::class, 'store'])->name('student.store');

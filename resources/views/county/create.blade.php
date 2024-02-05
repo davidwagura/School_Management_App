@@ -34,8 +34,8 @@
             <label for="name">Name:</label>
             <input type="text" name="name">
 
-            <label for="patron">Patron:</label>
-            <input type="text" name="patron">
+            <label for="county_code">County Code:</label>
+            <input type="text" name="county_code">
 
             <button type="submit">Submit</button>
         </form>

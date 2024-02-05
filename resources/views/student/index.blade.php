@@ -52,7 +52,7 @@
         </table>
     </div>
     <td>
-        <form action="{{route('student.delete', ['student' => $student ])}}" method="post">
+        <form action="{{route('student.delete', ['student' => $student ])}}" method="delete">
             @csrf
             @method('delete')
 
