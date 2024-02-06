@@ -7,6 +7,7 @@
 </head>
 <body>
     <style>
+        
         label {
            text-align: center;
        }

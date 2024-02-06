@@ -5,18 +5,18 @@
 
 @section('content') 
 <h1>
-    <div class="text-left">
+    <div class="text-right pr-8 mt-4 mb-2">
         <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 border border-blue-700 rounded">
-            <a href="{{ route('teacher.add') }}">Add a new teacher</a>
+            <a href="{{ route('teacher.add') }}">Add New Teacher</a>
         </button>
     </div>
 </h1>
 <div>
     <table class="overflow-x-auto text-center">
         <tr>
-            <th class="px-4 py-3">Id</th>
-            <th class="px-4 py-3">FirstName</th>
-            <th class="px-4 py-3">LastName</th>
+            <th>Id</th>
+            <th>FirstName</th>
+            <th>LastName</th>
             <th>Gender</th>
             <th>Work Number</th>
             <th>Delete</th>
@@ -43,9 +43,8 @@
                                 @csrf
                                 @method('delete')
                                 <input type="submit" value="delete"/>
-                    </div>
                         </button>
-                            </form>
+                    </div>
                 </td>
             </tr>                
 
