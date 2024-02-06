@@ -42,7 +42,7 @@
             <label for="work_number">Work Number:</label>
             <input type="text" name="work_number">
 
-            <button type="submit">Submit</button>
+            <button class="bg-blue-500 hover:bg-blue-700 h-8 px-4 mt-4 border border-blue-700 rounded pr-4" type="submit">Submit</button>
         </form>
     </div>
 @endsection
