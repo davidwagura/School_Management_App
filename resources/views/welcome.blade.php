@@ -22,7 +22,7 @@
         <div class="justify-items-center">
             @yield('content')
         </div>
-        <footer class="flex justify-center mb-0 bg-gray-700 ">
+        <footer class="flex justify-center mt-4 mb-0">
             <p>&copy; 2024 School Management System. All rights reserved.</p>
         </footer>
     </body>

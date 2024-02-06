@@ -5,47 +5,52 @@
 
 @section('content') 
 <h1>
-    <u>
-        Edit your information here:
-    </u>
+    <div class="text-left">
+        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 border border-blue-700 rounded">
+            <a href="{{ route('teacher.add') }}">Add a new teacher</a>
+        </button>
+    </div>
 </h1>
 <div>
-    <table class="overflow-x-auto">
+    <table class="overflow-x-auto text-center">
         <tr>
             <th class="px-4 py-3">Id</th>
             <th class="px-4 py-3">FirstName</th>
-            <th>LastName</th>
-            <th class="px-4 py-3">Gender</th>
-            <th class="px-4 py-3">Work Number</th>
-            <th class="px-4 py-3">Edit</th>
-            <th class="px-4 py-3">Delete</th>
+            <th class="px-4 py-3">LastName</th>
+            <th>Gender</th>
+            <th>Work Number</th>
+            <th>Delete</th>
+            <th>Edit</th>
         </tr>
         @foreach ($teachers as $teacher)
-            <tr>
-                <td class="px-4 py-3">{{ $teacher->id }}</td>
-                <td class="px-4 py-3">{{ $teacher->first_name }}</td>
-                <td class="px-4 py-3">{{ $teacher->last_name }}</td>
-                <td class="px-4 py-3">{{ $teacher->gender }}</td>
-                <td class="px-4 py-3">{{ $teacher->work_number }}</td>
-                <td class="px-4 py-3">
-                    <a href="{{ route('teacher.edit', ['teacher' => $teacher ]) }}">Edit</a>
+            <tr class="px-4 py-3">
+                <td>{{ $teacher->id }}</td>
+                <td>{{ $teacher->first_name }}</td>
+                <td>{{ $teacher->last_name }}</td>
+                <td>{{ $teacher->gender }}</td>
+                <td>{{ $teacher->work_number }}</td>
+                <td class="text-white">
+                    <div>
+                        <button class="bg-blue-500 hover:bg-blue-700 h-8 px-4 mt-4 border border-blue-700 rounded pr-4">
+                            <a href="{{ route('teacher.edit', ['teacher' => $teacher ]) }}">Edit</a>
+                        </button>
+                    </div>
                 </td>                  
-                <td class="px-4 py-3">
-                <form action="{{route('teacher.delete', ['teacher' => $teacher ])}}" method="post">
-                @csrf
-                @method('delete')
-                
-                <input type="submit" value="delete"/>
-                </form>
+                <td class="text-white">
+                    <div>
+                        <button class="bg-blue-500 hover:bg-blue-700 h-8 px-4 mt-4 border border-blue-700 rounded pr-4">
+                            <form action="{{route('teacher.delete', ['teacher' => $teacher ])}}" method="post">
+                                @csrf
+                                @method('delete')
+                                <input type="submit" value="delete"/>
+                    </div>
+                        </button>
+                            </form>
                 </td>
-                
             </tr>                
 
     @endforeach
     </table>
-</div>
-<div>
-    <a href="{{ route('teacher.add') }}">Add a new teacher</a>
 </div>
 
 @endsection

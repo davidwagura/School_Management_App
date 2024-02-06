@@ -4,12 +4,14 @@
 
 @section('content') 
 <h1>
-    <u>
-        Edit your information here:
-    </u>
+<div class="text-left">
+    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 border border-blue-700 rounded">
+        <a href="{{ route('county.add') }}">Add a new county</a>
+    </button>
+</div>
 </h1>
 <div>
-    <table class="overflow-x-auto">
+    <table class="overflow-x-auto text-center">
         <tr>
             <th class="px-4 py-3">Id</th>
             <th class="px-4 py-3">Name</th>
@@ -23,23 +25,20 @@
                 <td class="px-4 py-3">{{ $county->name }}</td>
                 <td class="px-4 py-3">{{ $county->county_code }}</td>
                 <td class="px-4 py-3">
-                    <form action="{{route('county.delete', ['county' => $county ])}}" method="delete">
+                    <form class="text-red-600" action="{{route('county.delete', ['county' => $county ])}}" method="delete">
                         @csrf
                         @method('delete')
                 
                         <input type="submit" value="delete"/>
                     </form>
                 </td>
-                <td class="px-4 py-3">
+                <td class="px-4 py-3 text-blue-700">
                     <a href="{{ route('county.edit', ['county' => $county ]) }}">Edit</a>
                 </td>  
                 
             </tr> 
     @endforeach
     </table>
-</div>
-<div>
-    <a href="{{ route('county.add') }}">Add a new county</a>
 </div>
 
 

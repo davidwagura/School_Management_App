@@ -6,6 +6,19 @@
     <title>Document</title>
 </head>
 <body>
+    <style>
+         label {
+            text-align: center;
+        }
+        body {
+            background-color: gray;
+            text-align: center;
+        }
+        form {
+            display: inline-block;
+        }
+
+    </style>
     <h1>
         <u>Edit club details:</u>
     </h1>
