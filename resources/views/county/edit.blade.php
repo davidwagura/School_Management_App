@@ -23,16 +23,16 @@
     <h1>
         <u>Edit county details:</u>
     </h1>
-    <div>
+    <div class="create-inputs flex justify-center items-center">
         <form action="{{ route('county.update', ['county' => $county]) }}" method="post">
             @csrf
             @method('put')
             <div>
-                <label for="name">Name:</label>
-                <input type="text" name="name" value="{{ $county->name }}">
+                <label class="mr-2" for="name">Name:</label>
+                <input class="border rounded px-2 py-1" class="border rounded px-2 py-1" type="text" name="name" value="{{ $county->name }}">
     
-                <label for="county_code">Last Name:</label>
-                <input type="text" name="county_code" value="{{ $county->county_code }}">
+                <label class="mr-2" for="county_code">Last Name:</label>
+                <input type="text" name="county_code" value="{{ $county->county_code }}"><br>
         
                 <input type="submit" value="Update">
             </div>

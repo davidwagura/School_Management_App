@@ -23,22 +23,22 @@
     <h1>
         <u>Edit teacher details:</u>
     </h1>
-    <div>
+    <div class="create-inputs flex justify-center items-center">
         <form action="{{ route('teacher.update', ['teachers' => $teachers]) }}" method="put">
             @csrf
             @method('put')
             <div>
                 <label for="first_name">First Name:</label>
-                <input type="text" name="first_name" value="{{ $teacher->first_name }}">
+                <input class="border rounded px-2 py-1" type="text" name="first_name" value="{{ $teacher->first_name }}">
     
                 <label for="last_name">Last Name:</label>
-                <input type="text" name="last_name" value="{{ $teacher->last_name }}">
+                <input class="border rounded px-2 py-1" type="text" name="last_name" value="{{ $teacher->last_name }}">
     
                 <label for="gender">Gender:</label>
-                <input type="text" name="gender" value="{{ $teacher->gender }}">
+                <input class="border rounded px-2 py-1" type="text" name="gender" value="{{ $teacher->gender }}">
 
                 <label for="work_number">Work Number:</label>
-                <input type="text" name="work_number" value="{{ $teacher->password }}">
+                <input class="border rounded px-2 py-1" type="text" name="work_number" value="{{ $teacher->password }}"><br>
     
                 <input type="submit" value="Update">
             </div>
