@@ -31,14 +31,14 @@
                 <td>{{ $teacher->work_number }}</td>
                 <td class="text-white">
                     <div>
-                        <button class="bg-blue-500 hover:bg-blue-700 h-8 px-4 mt-4 border border-blue-700 rounded pr-4">
+                        <button class="bg-red-500 hover:bg-red-300 h-8 px-4 mt-4 rounded pr-4">
                             <a href="{{ route('teacher.edit', ['teacher' => $teacher ]) }}">Edit</a>
                         </button>
                     </div>
                 </td>                  
                 <td class="text-white">
                     <div>
-                        <button class="bg-blue-500 hover:bg-blue-700 h-8 px-4 mt-4 border border-blue-700 rounded pr-4">
+                        <button class="bg-blue-500 hover:bg-blue-700 h-8 px-4 mt-4 rounded pr-4">
                             <form action="{{route('teacher.delete', ['teacher' => $teacher ])}}" method="post">
                                 @csrf
                                 @method('delete')

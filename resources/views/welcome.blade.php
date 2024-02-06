@@ -7,9 +7,9 @@
         @vite('resources/css/app.css')
         <title>Shool Management System</title>
     </head>
-    <body class="text-lg">
-        <nav class="flex justify-center bg-gray-700 h-12 text-white" >
-            <div class="mt-2">
+    <body class="flex flex-col h-screen justify-between">
+        <nav class="flex justify-center bg-gray-700  text-white" >
+            <div >
                 <a href="/student/create" class="pr-4">Students</a>
                 <a href="/county/create" class="pr-4">County</a>
                 <a href="/form/create" class="pr-4">Forms</a>
@@ -22,7 +22,7 @@
         <div class="justify-items-center">
             @yield('content')
         </div>
-        <footer class="flex justify-center mt-4 mb-0">
+        <footer class="flex justify-center mb-0">
             <p>&copy; 2024 School Management System. All rights reserved.</p>
         </footer>
     </body>

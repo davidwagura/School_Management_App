@@ -12,12 +12,7 @@
             display: flex;
             text-align: center;
             
-        }
-        /* input {
-            display: flex;
-            justify-content: center;
-            display: inline-block;
-        } */
+        }           
     </style>
     <h1>
         <u>

@@ -31,7 +31,7 @@
                 <label class="mr-2" for="name">Name:</label>
                 <input class="border rounded px-2 py-1" class="border rounded px-2 py-1" type="text" name="name" value="{{ $county->name }}">
     
-                <label class="mr-2" for="county_code">Last Name:</label>
+                <label class="mr-2" for="county_code">County Code:</label>
                 <input type="text" name="county_code" value="{{ $county->county_code }}"><br>
         
                 <input class="bg-blue-500 hover:bg-blue-700 h-8 px-4 mt-4 border border-blue-700 rounded pr-4" type="submit" type="submit" value="Update">

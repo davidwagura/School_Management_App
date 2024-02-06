@@ -31,8 +31,8 @@
                 <label class="mr-2" for="name">Name:</label>
                 <input class="border rounded px-2 py-1" type="text" name="name" value="{{ $form->name }}">
     
-                <label class="mr-2" for="last_name">Last Name:</label>
-                <input class="border rounded px-2 py-1" type="text" name="last_name" value="{{ $form->class_teacher }}"><br>
+                <label class="mr-2" for="class_teacher">Class Teacher:</label>
+                <input class="border rounded px-2 py-1" type="text" name="class_teacher" value="{{ $form->class_teacher }}"><br>
         
                 <input class="bg-blue-500 hover:bg-blue-700 h-8 px-4 mt-4 border border-blue-700 rounded pr-4" type="submit" type="submit" value="Update">
             </div>

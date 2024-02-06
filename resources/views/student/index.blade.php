@@ -46,7 +46,7 @@
                     </td>
                     <td>
                         <div>
-                            <button class="bg-blue-500 hover:bg-blue-700 h-8 px-4 text-white text-md mt-4 border border-blue-700 rounded pr-4">
+                            <button class="bg-blue-500 hover:bg-blue-700 h-8 px-4 text-white text-md mt-4 rounded pr-4">
                                 <a href="{{ route('student.edit', ['student' => $student ]) }}">Edit</a>
                             </button>
                         </div>
