@@ -7,15 +7,15 @@
 </head>
 <body>
     <style>
+        
         label {
            text-align: center;
+           display: flex;
+           justify-content: space-around;
        }
        body {
            background-color: gray;
            text-align: center;
-       }
-       form {
-           display: inline-block;
        }
 
    </style>
@@ -34,7 +34,7 @@
                 <label class="mr-2" for="last_name">Last Name:</label>
                 <input class="border rounded px-2 py-1" type="text" name="last_name" value="{{ $form->class_teacher }}"><br>
         
-                <input type="submit" value="Update">
+                <input class="bg-blue-500 hover:bg-blue-700 h-8 px-4 mt-4 border border-blue-700 rounded pr-4" type="submit" type="submit" value="Update">
             </div>
         </form>
     </div>

@@ -6,7 +6,7 @@
     <h1>
     <div class="text-right pr-8 mt-4 mb-2">
         <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 border border-blue-700 rounded">
-            <a href="{{ route('form.add') }}">Add New Student</a>
+            <a href="{{ route('form.add') }}">Add New Form</a>
         </button>
     </div>
     </h1>

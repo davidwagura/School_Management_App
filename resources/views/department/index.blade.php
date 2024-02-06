@@ -12,7 +12,7 @@
     </div>
     <div>
         <table  class="overflow-x-auto text-center">
-            <tr class="px-2 -3">
+            <tr class="px-4 -3">
                 <th>Id</th>
                 <th>Name</th>
                 <th>Patron</th>
@@ -20,7 +20,7 @@
                 <th>Edit</th>
                 </tr>
             @foreach ($department as $department)
-                <tr class="px-2 -3">
+                <tr class="px-4 -3">
                     <td>{{ $department->id }}</td>
                     <td>{{ $department->name }}</td>
                     <td>{{ $department->patron }}</td>
@@ -45,7 +45,7 @@
                     </td>  
                 
                 </tr> 
-        @endforeach
+            @endforeach
         </table>
     </div>
 
