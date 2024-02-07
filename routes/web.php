@@ -27,10 +27,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/test', function () {
-    return view('test');
-});
-
 Route::get('/student/index', [StudentController::class, 'index'])->name('student.index');
 
 Route::post('/student/store', [StudentController::class, 'store'])->name('student.store');
@@ -39,10 +35,9 @@ Route::get('/student/create', [StudentController::class, 'create'])->name('stude
 
 Route::put('/student/{student}/update', [StudentController::class, 'update' ])->name('student.update');
 
-Route::delete('/student/{student}/delete', [StudentController::class, 'delete'])->name('student.delete');
+Route::get('/student/{student}/delete', [StudentController::class, 'delete'])->name('student.delete');
 
 Route::get('/student/{student}/edit', [StudentController::class, 'edit'])->name('student.edit');
-
 
 Route::get('/student/add', [StudentController::class, 'add'])->name('student.add');
 

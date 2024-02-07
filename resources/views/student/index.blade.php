@@ -4,7 +4,7 @@
 
     <div class="overflow-x-auto">
 
-        <div class="flex justify-end pr-8 mt-4 mb-2">
+        <div class="flex justify-end pr-8 pt-20 mb-2">
             <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 mt-4 border border-blue-700 rounded pr-4">
                 <a href="{{ route('student.add') }}">Add New Student</a>
             </button>
@@ -38,7 +38,6 @@
                                 <form class="text-white text-md" action="{{route('student.delete', ['student' => $student ])}}" method="delete">
                                     @csrf
                                     @method('delete')
-                
                                     <input type="submit" value="delete"/>
                                 </form>
                             </button>

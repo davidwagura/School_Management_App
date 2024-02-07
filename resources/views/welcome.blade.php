@@ -7,23 +7,23 @@
         @vite('resources/css/app.css')
         <title>Shool Management System</title>
     </head>
-    <body class="flex flex-col h-screen justify-between">
-        <nav class="flex justify-center bg-gray-700  text-white" >
-            <div >
-                <a href="/student/create" class="pr-4">Students</a>
-                <a href="/county/create" class="pr-4">County</a>
-                <a href="/form/create" class="pr-4">Forms</a>
-                <a href="/club/create" class="pr-4">Clubs</a>
-                <a href="/teacher/create" class="pr-4">Teachers</a>
-                <a href="/department/create" class="pr-4">Department</a>
+    <body class="flex flex-col h-screen justify-top align-middle min-h-screen">
+        <nav class="flex justify-center bg-gray-700  text-white h-16 p-3 text-2xl fixed top-0 w-screen" >
+            <div>
+                <a href="/student/index" class="pr-6">Students</a>
+                <a href="/county/index" class="pr-6">County</a>
+                <a href="/form/index" class="pr-6">Forms</a>
+                <a href="/club/index" class="pr-6">Clubs</a>
+                <a href="/teacher/index" class="pr-6">Teachers</a>
+                <a href="/department/index" class="pr-6">Department</a>
             </div>
-
         </nav>
         <div class="justify-items-center">
             @yield('content')
         </div>
-        <footer class="flex justify-center mb-0">
-            <p>&copy; 2024 School Management System. All rights reserved.</p>
+        <footer class="flex justify-center bg-gray-700 text-white mt-60 h-12 fixed bottom-0 w-screen">
+            <p class="mt-3 text-xl">&copy; 2024 School Management System. All rights reserved.</p>
         </footer>
     </body>
 </html>
+

@@ -12,7 +12,7 @@
     </div>
 </h1>
 <div>
-    <table class="overflow-x-auto text-center">
+    <table class="table-auto min-w-full text-center">
         <tr>
             <th>Id</th>
             <th>FirstName</th>
