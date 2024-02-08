@@ -16,7 +16,6 @@
            margin-top: 12px;
        }
        body {
-           background-color: gray;
            text-align: center;
        }
        select {

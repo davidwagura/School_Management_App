@@ -5,12 +5,12 @@
     <div class="overflow-x-auto">
 
         <div class="flex justify-end pr-8 pt-20 mb-2">
-            <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 mt-4 border border-blue-700 rounded pr-4 fixed top-0">
+            <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 -m-18 border border-blue-700 rounded pr-4 fixed ">
                 <a href="{{ route('student.add') }}">Add New Student</a>
             </button>
         </div>
 
-        <table class="table-auto min-w-full text-center justify-around border-separate border border-gray-400 border-l-p-20">
+        <table class="table-auto min-w-full text-center justify-around border-separate mt-12">
             <tr class="px-4 py-3">
                 <th>ID</th>
                 <th>First Name</th>
