@@ -12,7 +12,6 @@
 
         <table class="table-auto min-w-full text-center justify-around border-separate mt-12 grid grid-cols-auto place-content-center ...">
             <tr class="pl-6">
-                <th class="pl-6">ID</th>
                 <th class="pl-6">First Name</th>
                 <th class="pl-6">Last Name</th>
                 <th class="pl-6">Gender</th>
@@ -24,7 +23,6 @@
                 </tr>
             @foreach ($students as $student)
                 <tr class="px-4 py-3">
-                    <td>{{ $student->id }}</td>
                     <td>{{ $student->first_name }}</td>
                     <td>{{ $student->last_name }}</td>
                     <td>{{ $student->gender }}</td>
@@ -38,7 +36,7 @@
                                 <form class="text-white text-md" action="{{route('student.delete', ['student' => $student ])}}" method="delete">
                                     @csrf
                                     @method('delete')
-                                    <input type="submit" value="delete"/>
+                                    <input type="submit" value="Delete"/>
                                 </form>
                             </button>
                         </div>    
