@@ -115,7 +115,7 @@ Route::get('/teacher/create', [TeacherController::class, 'create'])->name('teach
 
 Route::put('/teacher/{teacher}/update', [TeacherController::class, 'update' ])->name('teacher.update');
 
-Route::delete('/teacher/{teacher}/delete', [TeacherController::class, 'delete'])->name('teacher.delete');
+Route::get('/teacher/{teacher}/delete', [TeacherController::class, 'delete'])->name('teacher.delete');
 
 Route::get('/teacher/{teacher}/edit', [TeacherController::class, 'edit'])->name('teacher.edit');
 

@@ -47,7 +47,7 @@ class TeacherController extends Controller
             return view('teacher.edit', ['teacher' => $teacher]);
         }
     
-        public function delete( $teacher)
+        public function delete(Teacher $teacher)
         {
     
             $teacher->delete();
