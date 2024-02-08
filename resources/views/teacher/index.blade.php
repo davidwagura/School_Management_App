@@ -6,25 +6,23 @@
 @section('content') 
 <h1>
     <div class="text-right pr-8 mt-4 mb-2">
-        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 border border-blue-700 rounded">
-            <a href="{{ route('teacher.add') }}">Add New Teacher</a>
+        <button onclick="location.href='{{ route('teacher.add') }}' " class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 mt-16 border border-blue-700 rounded">
+            Add New Teacher
         </button>
     </div>
 </h1>
 <div>
-    <table class="table-auto min-w-full text-center">
+    <table class="table-auto min-w-full text-center grid grid-cols-auto place-content-center ...">
         <tr>
-            <th>Id</th>
-            <th>FirstName</th>
-            <th>LastName</th>
-            <th>Gender</th>
-            <th>Work Number</th>
-            <th>Delete</th>
-            <th>Edit</th>
+\            <th class="pl-6">FirstName</th>
+            <th class="pl-6">LastName</th>
+            <th class="pl-6">Gender</th>
+            <th class="pl-6">Work Number</th>
+            <th class="pl-6">Delete</th>
+            <th class="pl-6">Edit</th>
         </tr>
         @foreach ($teachers as $teacher)
             <tr class="px-4 py-3">
-                <td>{{ $teacher->id }}</td>
                 <td>{{ $teacher->first_name }}</td>
                 <td>{{ $teacher->last_name }}</td>
                 <td>{{ $teacher->gender }}</td>

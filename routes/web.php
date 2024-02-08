@@ -84,7 +84,7 @@ Route::get('/county/create', [CountyController::class, 'create'])->name('county.
 
 Route::put('/county/{county}/update', [CountyController::class, 'update' ])->name('county.update');
 
-Route::delete('/county/{county}/delete', [CountyController::class, 'delete'])->name('county.delete');
+Route::get('/county/{county}/delete', [CountyController::class, 'delete'])->name('county.delete');
 
 Route::get('/county/{county}/edit', [CountyController::class, 'edit'])->name('county.edit');
 

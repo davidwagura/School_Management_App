@@ -20,11 +20,12 @@ class TeacherController extends Controller
  
     public function store(Request $request)
         {
+            $teacher = new Teacher;
             $teacher->first_name = $request->first_name;
             $teacher->last_name = $request->last_name;
             $teacher->gender = $request->gender;
             $teacher->work_number = $request->work_number;
-            $student->save();
+            $teacher->save();
                 
     
             return redirect(route("teacher.index"));
@@ -37,7 +38,7 @@ class TeacherController extends Controller
             $teacher->last_name = $request->last_name;
             $teacher->gender = $request->gender;
             $teacher->work_number = $request->work_number;
-            $student->save();
+            $teacher->save();
 
             return redirect(route('teacher.index'));
         }

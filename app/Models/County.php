@@ -13,6 +13,6 @@ class County extends Model
 
     protected $filllable = [
         'name',
-        'county-code'
+        'county-code',
     ];
 }

@@ -1,7 +1,7 @@
 @extends('welcome')
 
 @section('content')
-    <h1>
+    <h1 class="mt-40 text-center font-bold">
         <u>
             Fill the form below:
         </u>

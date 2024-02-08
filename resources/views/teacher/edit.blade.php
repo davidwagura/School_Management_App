@@ -12,11 +12,18 @@
            text-align: center;
            display: flex;
            justify-content: space-around;
-       }
+        }
        body {
-           background-color: gray;
            text-align: center;
-       }
+        }
+       label {
+            margin-top: 20px;
+        }
+       .submit {
+            margin-top: 20px;
+            background-color: blue;
+            color: white;
+        }
 
    </style>
 
@@ -24,7 +31,7 @@
         <u>Edit teacher details:</u>
     </h1>
     <div class="create-inputs flex justify-center items-center">
-        <form action="{{ route('teacher.update', ['teachers' => $teachers]) }}" method="put">
+        <form action="{{ route('teacher.update', ['teacher' => $teacher]) }}" method="put">
             @csrf
             @method('put')
             <div>
@@ -38,9 +45,9 @@
                 <input class="border rounded px-2 py-1" type="text" name="gender" value="{{ $teacher->gender }}">
 
                 <label for="work_number">Work Number:</label>
-                <input class="border rounded px-2 py-1" type="text" name="work_number" value="{{ $teacher->password }}"><br>
+                <input class="border rounded px-2 py-1" type="text" name="work_number" value="{{ $teacher->work_number }}"><br>
     
-                <input class="bg-blue-500 hover:bg-blue-700 h-8 px-4 mt-4 border border-blue-700 rounded pr-4" type="submit" type="submit" value="Update">
+                <input class="submit" type="submit" type="submit" value="Update">
             </div>
         </form>
     </div>
