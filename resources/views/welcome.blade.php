@@ -18,7 +18,7 @@
                 <a href="/department/index" class="pr-6">Department</a>
             </div>
         </nav>
-        <div class="justify-items-center place-content-center">
+        <div class="justify-items-center">
             @yield('content')
         </div>
         <footer class="flex justify-center bg-gray-700 text-white mt-60 h-12 fixed bottom-0 w-screen">

@@ -10,17 +10,17 @@
             </button>
         </div>
 
-        <table class="table-auto min-w-full text-center justify-around border-separate mt-12">
-            <tr class="px-4 py-3">
-                <th>ID</th>
-                <th>First Name</th>
-                <th>Last Name</th>
-                <th>Gender</th>
-                <th>Admission Number</th>
-                <th>Home County</th>
-                <th>Date Of Birth</th>
-                <th class="px-2 py-3">Delete</th>
-                <th class="px-2 py-3">Edit</th>
+        <table class="table-auto min-w-full text-center justify-around border-separate mt-12 grid grid-cols-auto place-content-center ...">
+            <tr class="pl-6">
+                <th class="pl-6">ID</th>
+                <th class="pl-6">First Name</th>
+                <th class="pl-6">Last Name</th>
+                <th class="pl-6">Gender</th>
+                <th class="pl-6">Admission Number</th>
+                <th class="pl-6">Home County</th>
+                <th class="pl-10">Date Of Birth</th>
+                <th class="pl-6">Delete</th>
+                <th class="pl-6">Edit</th>
                 </tr>
             @foreach ($students as $student)
                 <tr class="px-4 py-3">
