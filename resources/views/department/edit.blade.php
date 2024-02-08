@@ -12,10 +12,15 @@
            text-align: center;
            display: flex;
            justify-content: space-around;
+           margin-top: 20px;
        }
        body {
-           background-color: gray;
            text-align: center;
+       }
+       .submit {
+        color: white;
+        background-color: blue;
+        margin-top: 20px;
        }
 
    </style>
@@ -34,7 +39,7 @@
                 <label class="mr-2" for="patron">Patron:</label>
                 <input class="border rounded px-2 py-1" type="text" name="patron" value="{{ $department->patron }}"><br>
         
-                <input class="bg-blue-500 hover:bg-blue-700 h-8 px-4 mt-4 border border-blue-700 rounded pr-4" type="submit" type="submit" value="Update">
+                <input class="submit" type="submit" type="submit" value="Update">
             </div>
         </form>
     </div>

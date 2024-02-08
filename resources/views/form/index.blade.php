@@ -13,15 +13,13 @@
     <div  class="overflow-x-auto">
         <table class="table-auto min-w-full text-center grid grid-cols-auto place-content-center ...">
             <tr class="px-4 py-3">
-                <th class="pl-6">Id</th>
-                <th class="pl-6">Name</th>
+                <th>Name</th>
                 <th class="pl-6">ClassTeacher</th>
                 <th class="pl-6">Delete</th>
                 <th class="pl-6">Edit</th>
                 </tr>
             @foreach ($form as $form)
                 <tr class="px-4 py-2">
-                    <td >{{ $form->id }}</td>
                     <td>{{ $form->name }}</td>
                     <td>{{ $form->class_teacher }}</td>
                     <td>
@@ -37,7 +35,7 @@
                     </td>
                     <td class="text-white">
                         <div>
-                            <button class="bg-blue-500 hover:bg-blue-700 h-8 ml-5 mt-1 px-4 mt-0 rounded pr-4">
+                            <button class="bg-blue-500 hover:bg-blue-700 h-8 ml-5 mt-1 px-4 rounded pr-4">
                                 <a href="{{ route('form.edit', ['form' => $form ]) }}">Edit</a>
                             </button>
                         </div>

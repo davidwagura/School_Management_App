@@ -4,30 +4,28 @@
   
 
     @section('content')
-    <div class="text-right pr-8 mt-4 mb-2">
-        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold rounded">
+    <div class="text-right pr-8 mt-4">
+        <button class="bg-blue-500 hover:bg-blue-700 mt-16 text-white font-bold rounded">
             <a href="{{ route('department.add') }}">Add New Department</a>
         </button>
     </div>
  
     <h1>
     <div class="overflow-x-auto">
-        <table class="table-auto min-w-full text-center">
+        <table class="table-auto min-w-full text-center mt-10  grid grid-cols-auto place-content-center ...">
             <tr class="px-2 -3">
-                <th>Id</th>
                 <th>Name</th>
-                <th>Patron</th>
-                <th>Delete</th>
-                <th>Edit</th>
+                <th class="pl-6">Patron</th>
+                <th class="pl-6">Delete</th>
+                <th class="pl-6">Edit</th>
                 </tr>
             @foreach ($department as $department)
                 <tr class="px-4 -3">
-                    <td>{{ $department->id }}</td>
-                    <td>{{ $department->name }}</td>
-                    <td>{{ $department->patron }}</td>
+                    <td class="pl-6">{{ $department->name }}</td>
+                    <td class="pl-4">{{ $department->patron }}</td>
                     <td>
                         <div>
-                            <button class="bg-red-500 hover:bg-red-300 h-8 px-4 mt-4 rounded pr-4">
+                            <button class="bg-red-500 hover:bg-red-300 h-8 px-4 mt-2 ml-10 rounded pr-4">
                                 <form class="text-white" action="{{route('department.delete', ['department' => $department ])}}" method="delete">
                                     @csrf
                                     @method('delete')
@@ -39,7 +37,7 @@
                     </td>
                     <td class="text-white">
                         <div>
-                            <button class="bg-blue-500 hover:bg-blue-700 h-8 px-4 mt-4 rounded pr-4">
+                            <button class="bg-blue-500 hover:bg-blue-700 h-8 px-4 ml-10 mt-2 rounded pr-4">
                                 <a href="{{ route('department.edit', ['department' => $department ]) }}">Edit</a>
                             </button>
                         </div>
