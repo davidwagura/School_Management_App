@@ -12,11 +12,18 @@
            text-align: center;
            display: flex;
            justify-content: space-around;
-       }
+        }
        body {
-           background-color: gray;
            text-align: center;
-       }
+        }
+       label {
+            margin-top: 20px;
+        }
+       .submit {
+            margin-top: 20px;
+            background-color: blue;
+            color: white;
+        }
 
    </style>
 
@@ -34,7 +41,7 @@
                 <label class="mr-2" for="class_teacher">Class Teacher:</label>
                 <input class="border rounded px-2 py-1" type="text" name="class_teacher" value="{{ $form->class_teacher }}"><br>
         
-                <input class="bg-blue-500 hover:bg-blue-700 h-8 px-4 mt-4 border border-blue-700 rounded pr-4" type="submit" type="submit" value="Update">
+                <input class="submit" type="submit" type="submit" value="Update">
             </div>
         </form>
     </div>

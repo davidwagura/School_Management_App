@@ -22,7 +22,7 @@
        .submit {
             margin-top: 20px;
             background-color: blue;
-            
+            color: white;
         }
 
    </style>
