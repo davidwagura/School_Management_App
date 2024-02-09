@@ -31,7 +31,7 @@
         <u>Edit teacher details:</u>
     </h1>
     <div class="create-inputs flex justify-center items-center">
-        <form action="{{ route('teacher.update', ['teacher' => $teacher]) }}" method="put">
+        <form action="{{ route('teacher.update', ['teacher' => $teacher]) }}" method="postt">
             @csrf
             @method('put')
             <div>

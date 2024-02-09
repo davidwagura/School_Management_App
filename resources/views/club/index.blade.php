@@ -26,8 +26,8 @@
                         <button class="bg-red-500 hover:bg-red-300 ml-6 h-8 px-4 mt-0 rounded pr-4">
                             <form class="text-white" {{route('club.delete', ['club' => $club ])}} method="post">
                                 @csrf
-                                @method('delete')
-                                <input type="submit" value="delete"/>
+                                @method('get')
+                                <input type="submit" value="Delete"/>
                             </form>
                         </button>
                     </div>

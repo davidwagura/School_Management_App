@@ -5,14 +5,14 @@
 
     @section('content')
     <div class="text-right pr-8 mt-4">
-        <button class="bg-blue-500 hover:bg-blue-700 mt-16 text-white font-bold rounded">
+        <button class="bg-blue-500 hover:bg-blue-700 mt-20 text-white h-10 font-bold px-4 border border-blue-700 rounded">
             <a href="{{ route('department.add') }}">Add New Department</a>
         </button>
     </div>
  
     <h1>
     <div class="overflow-x-auto">
-        <table class="table-auto min-w-full text-center mt-10  grid grid-cols-auto place-content-center ...">
+        <table class="table-auto min-w-full text-center mt-6  grid grid-cols-auto place-content-center ...">
             <tr class="px-2 -3">
                 <th>Name</th>
                 <th class="pl-6">Patron</th>

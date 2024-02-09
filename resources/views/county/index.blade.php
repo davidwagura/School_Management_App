@@ -37,7 +37,7 @@
                 </td>
                 <td class="text-white">
                     <div>
-                        <button class="bg-blue-500 hover:bg-blue-700 mt-3 ml-3 h-8 px-4 rounded pr-10">
+                        <button class="bg-blue-500 hover:bg-blue-700 mt-3 ml-3 h-8  rounded pl-4 pr-6">
                             <a href="{{ route('county.edit', ['county' => $county ]) }}">Edit</a>
                         </button>
                     </div>

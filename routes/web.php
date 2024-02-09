@@ -33,7 +33,7 @@ Route::post('/student/store', [StudentController::class, 'store'])->name('studen
 
 Route::get('/student/create', [StudentController::class, 'create'])->name('student.create');
 
-Route::put('/student/{student}/update', [StudentController::class, 'update' ])->name('student.update');
+Route::get('/student/{student}/update', [StudentController::class, 'update' ])->name('student.update');
 
 Route::get('/student/{student}/delete', [StudentController::class, 'delete'])->name('student.delete');
 
@@ -68,7 +68,7 @@ Route::get('/club/create', [ClubController::class, 'create'])->name('club.create
 
 Route::put('/club/{club}/update', [ClubController::class, 'update' ])->name('club.update');
 
-Route::delete('/club/{club}/delete', [ClubController::class, 'delete'])->name('club.delete');
+Route::get('/club/{club}/delete', [ClubController::class, 'delete'])->name('club.delete');
 
 Route::get('/club/{club}/edit', [ClubController::class, 'edit'])->name('club.edit');
 
@@ -99,7 +99,7 @@ Route::get('/department/create', [DepartmentController::class, 'create'])->name(
 
 Route::put('/department/{department}/update', [DepartmentController::class, 'update' ])->name('department.update');
 
-Route::delete('/department/{department}/delete', [DepartmentController::class, 'delete'])->name('department.delete');
+Route::get('/department/{department}/delete', [DepartmentController::class, 'delete'])->name('department.delete');
 
 Route::get('/department/{department}/edit', [DepartmentController::class,'edit'])->name('department.edit');
 

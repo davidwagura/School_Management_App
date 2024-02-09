@@ -12,14 +12,14 @@ class ClubController extends Controller
         $clubs = Clubs::all();
  
         return view('club.index', ['club' => $clubs]);
-     }
+    }
  
     public function create() {
         return view('club.create');
-     }
+    }
  
     public function store(Request $request)
-        {
+    {
                     $club = new Clubs;
                     $club->name = $request->name;
                     $club->patron = $request->patron;
@@ -28,16 +28,16 @@ class ClubController extends Controller
     
             return redirect(route("club.index"));
     
-        }
+    }
 
-        public function update(Request $request, Clubs $club) {
+    public function update(Request $request, Clubs $club) {
 
-            $club->name = $request->name;
-            $club->patron = $request->patron;
-            $club->save();
+        $club->name = $request->name;
+        $club->patron = $request->patron;
+        $club->save();
 
-            return redirect(route('club.index'));
-        }
+        return redirect(route('club.index'));
+    }
         public function edit(Clubs $club)  
         {         
             return view('club.edit', ['club' => $club]);
@@ -46,6 +46,8 @@ class ClubController extends Controller
         public function delete(Clubs $club)
         {
     
+            \Log::debug($club);
+
             $club->delete();
     
             return redirect(route('club.index'));
