@@ -42,7 +42,7 @@ class DepartmentController extends Controller
             return view('department.edit', ['department' => $department]);
         }
 
-        public function department (){
+        public function department (Department $department){
             return view('department.view'); 
         }
     

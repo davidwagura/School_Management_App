@@ -45,8 +45,8 @@
                     </td>
                     <td class="text-white">
                         <div>
-                            <button onclick="location.href='{{ route('department.view', ['department' => $department]) }}" class="bg-blue-500 hover:bg-blue-700 h-8 px-4 ml-10 mt-2 rounded pr-4">
-                                View
+                            <button class="bg-blue-500 hover:bg-blue-700 h-8 px-4 ml-10 mt-2 rounded pr-4">
+                                <a href="{{ route('department.view', ['department' => $department]) }}">View</a> 
                             </button>
                         </div>
                     </td>  
