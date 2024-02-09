@@ -87,20 +87,12 @@
             <p>Class: 4E</p>
             <p>Best improved: Alex Mwangi</p>
         </div>
-    </div>
+    </div><br>
 
 
-    <div class="flex row w-full">
-
-        <h1 class="font-bold">
-            <u>
-                Form One
-            </u>
-            <u>
-                Subject Ranking
-            </u>
-        </h1>
-        <table class="pr-8 border mt-10 border-black">
+    <div class="flex row w-full mb-28">
+        <table class="pr-4 ml-6 border mt-10 border-black">
+            <caption class="font-bold">Form One</caption>
             <tr>
                 <th>Subject Name</th>
                 <th class="p-6">Mean Score</th>
@@ -169,15 +161,8 @@
 
         </table>
     
-        <h1 class="font-bold mt-8">
-            <u>
-                Form Two
-            </u>
-            <u>
-                Subject Ranking
-            </u>
-        </h1>
         <table class="pr-8  mt-10 border border-black">
+            <caption class="font-bold">Form Two</caption>
             <tr>
                 <th>Subject Name</th>
                 <th class="p-6">Mean Score</th>
@@ -248,15 +233,8 @@
         </table>
 
     
-        <h1 class="font-bold mt-8 ">
-            <u>
-                Form Three
-            </u>
-            <u>
-                Subject Ranking
-            </u>
-        </h1>
         <table class="pr-8  mt-10 border border-black">
+            <caption class="font-bold">Form Three</caption>
             <tr>
                 <th>Subject Name</th>
                 <th class="p-6">Mean Score</th>
@@ -325,16 +303,8 @@
 
         </table>
     
-
-        <h1 class="font-bold mt-8">
-            <u>
-                Form Four
-            </u>
-            <u>
-                Subject Ranking
-            </u>
-        </h1>
-        <table class="pr-8  mt-10 border border-black">
+        <table class="mt-10 mr-8 border border-black">
+            <caption class="font-bold">Form Four</caption>
             <tr>
                 <th>Subject Name</th>
                 <th class="p-6">Mean Score</th>
