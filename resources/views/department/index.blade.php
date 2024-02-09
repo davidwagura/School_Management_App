@@ -18,6 +18,7 @@
                 <th class="pl-6">Patron</th>
                 <th class="pl-6">Delete</th>
                 <th class="pl-6">Edit</th>
+                <th class="pl-6">View</th>
                 </tr>
             @foreach ($department as $department)
                 <tr class="px-4 -3">
@@ -41,7 +42,15 @@
                                 <a href="{{ route('department.edit', ['department' => $department ]) }}">Edit</a>
                             </button>
                         </div>
+                    </td>
+                    <td class="text-white">
+                        <div>
+                            <button onclick="location.href='{{ route('department.view', ['department' => $department]) }}" class="bg-blue-500 hover:bg-blue-700 h-8 px-4 ml-10 mt-2 rounded pr-4">
+                                View
+                            </button>
+                        </div>
                     </td>  
+  
                 
                 </tr> 
             @endforeach

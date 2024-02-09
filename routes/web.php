@@ -103,6 +103,8 @@ Route::get('/department/{department}/delete', [DepartmentController::class, 'del
 
 Route::get('/department/{department}/edit', [DepartmentController::class,'edit'])->name('department.edit');
 
+Route::get('department/{department}', [DepartmentController::class, 'department'])->name('department.view');
+
 Route::get('/department/add', [DepartmentController::class, 'add'])->name('department.add');
 
 
