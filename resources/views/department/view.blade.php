@@ -8,10 +8,10 @@
     </h1>
     <table class="table-auto min-w-full text-center mt-6  grid grid-cols-auto place-content-center ...">
         <tr>
-            <th class="pl-6">Form</th>
-            <th class="pl-6">Best student</th>
-            <th class="pl-6">Best Class</th>
-            <th class="pl-6">Best Subject</th>
+            <th class="border border-black pl-6">Form</th>
+            <th class="border border-black pl-6">Best student</th>
+            <th class="border border-black pl-6">Best Class</th>
+            <th class="border border-black pl-6">Best Subject</th>
         </tr>
         <tr>
             <td class="border border-black" class="pl-6">Form Four</td>
@@ -379,7 +379,7 @@
         </table>
     </div>
 
-        <table class="ml-12 mt-12">
+        <table class="ml-12 mb-28 mt-12">
             <tr class="border border-black">
                 <th class="border border-black">Name</th>
                 <th class="border border-black">Math</th>
@@ -395,96 +395,29 @@
                 <th class="border border-black">CRE</th>
                 <th class="border border-black">Agriculture</th>
                 <th class="border border-black">Total</th>
+            </tr>
+            @foreach ($users as $user )
+                    $total = 0;
+                <tr>
+                    <td class="border border-black">{{ $user['name'] }}</td>
+                    <td class="border border-black">{{ $user['Math'] }}</td>
+                    <td class="border border-black">{{ $user['English'] }}</td>
+                    <td class="border border-black">{{ $user['Physics'] }}</td>
+                    <td class="border border-black">{{ $user['Biology'] }}</td>
+                    <td class="border border-black">{{ $user['Chemistry'] }}</td>
+                    <td class="border border-black">{{ $user['History'] }}</td>
+                    <td class="border border-black">{{ $user['Geography'] }}</td>
+                    <td class="border border-black">{{ $user['Business'] }}</td>
+                    <td class="border border-black">{{ $user['Computer'] }}</td>
+                    <td class="border border-black">{{ $user['Kiswahili'] }}</td>
+                    <td class="border border-black">{{ $user['CRE'] }}</td>
+                    <td class="border border-black">{{ $user['Agriculture'] }}</td>
+                    <td class="border border-black">{{ $user['Total'] }}</td>
+
+                </tr>
 
 
-            </tr>
-            <tr class="border border-black">
-                <td class="border border-black">Moses Maina</td>
-                <td class="border border-black">46</td>
-                <td class="border border-black">54</td>
-                <td class="border border-black">58</td>
-                <td class="border border-black">48</td>
-                <td class="border border-black">76</td>
-                <td class="border border-black">64</td>
-                <td class="border border-black">54</td>
-                <td class="border border-black">76</td>
-                <td class="border border-black">64</td>
-                <td class="border border-black">82</td>
-                <td class="border border-black">44</td>
-                <td class="border border-black">44</td>
-
-            </tr>
-            <tr>
-                <td class="border border-black">Moses Maina</td>
-                <td class="border border-black">46</td>
-                <td class="border border-black">54</td>
-                <td class="border border-black">58</td>
-                <td class="border border-black">48</td>
-                <td class="border border-black">76</td>
-                <td class="border border-black">64</td>
-                <td class="border border-black">54</td>
-                <td class="border border-black">76</td>
-                <td class="border border-black">64</td>
-                <td class="border border-black">82</td>
-                <td class="border border-black">44</td>
-            </tr>
-            <tr>
-                <td class="border border-black">Moses Maina</td>
-                <td class="border border-black">46</td>
-                <td class="border border-black">54</td>
-                <td class="border border-black">58</td>
-                <td class="border border-black">48</td>
-                <td class="border border-black">76</td>
-                <td class="border border-black">64</td>
-                <td class="border border-black">54</td>
-                <td class="border border-black">76</td>
-                <td class="border border-black">64</td>
-                <td class="border border-black">82</td>
-                <td class="border border-black">44</td>
-            </tr>
-            <tr>
-                <td class="border border-black">Moses Maina</td>
-                <td class="border border-black">46</td>
-                <td class="border border-black">54</td>
-                <td class="border border-black">58</td>
-                <td class="border border-black">48</td>
-                <td class="border border-black">76</td>
-                <td class="border border-black">64</td>
-                <td class="border border-black">54</td>
-                <td class="border border-black">76</td>
-                <td class="border border-black">64</td>
-                <td class="border border-black">82</td>
-                <td class="border border-black">44</td>
-            </tr>
-            <tr>
-                <td class="border border-black">Moses Maina</td>
-                <td class="border border-black">46</td>
-                <td class="border border-black">54</td>
-                <td class="border border-black">58</td>
-                <td class="border border-black">48</td>
-                <td class="border border-black">76</td>
-                <td class="border border-black">64</td>
-                <td class="border border-black">54</td>
-                <td class="border border-black">76</td>
-                <td class="border border-black">64</td>
-                <td class="border border-black">82</td>
-                <td class="border border-black">44</td>
-            </tr>
-            <tr>
-                <td class="border border-black">Moses Maina</td>
-                <td class="border border-black">46</td>
-                <td class="border border-black">54</td>
-                <td class="border border-black">58</td>
-                <td class="border border-black">48</td>
-                <td class="border border-black">76</td>
-                <td class="border border-black">64</td>
-                <td class="border border-black">54</td>
-                <td class="border border-black">76</td>
-                <td class="border border-black">64</td>
-                <td class="border border-black">82</td>
-                <td class="border border-black">44</td>
-            </tr>
-
+            @endforeach
             
         </table>
 
